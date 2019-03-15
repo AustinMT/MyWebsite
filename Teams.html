@@ -1,196 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
-<title> Planet Soccer </title>
-<head>
-<link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="keywords" content="HTML, CSS, XML, JAVA, JavaScript">
-      <meta name="description" content="Planet Soccer Website">
-      <meta name="author" content="Austin Thornton">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
+<html lang="en" dir="ltr">
+	<head>
 
-<!-- SlideShow image @[ 3d93e9155ba23b1695cd67f07c2e432f ]-->
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-		slideIndex = 1
-	}
-  if (n < 1) {
-		slideIndex = slides.length
-	}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
-<body>
-
-	<!--Not an <ol></ol> due to <hr> bugging out-->
-  <div class="sidenav">
-    <a><b>Top Ranked Teams</a></b><hr>
-    <a>1. FC Barcelona</a><hr>
-    <a>2. Real Madrid C.F.</a><hr>
-    <a>3. FC Bayer Munich</a><hr>
-    <a>4. Juvntus F.C.</a><hr>
-    <a>5. Manchester United F.C.</a><hr>
-    <a>6. Liverpool F.C.</a><hr>
-    <a>7. Atletico Madrid</a><hr>
-    <a>8. Chelsea F.C.</a><hr>
-    <a>9. Arsenal F.C.</a><hr>
-    <a>10. Borussia Dortmund</a><hr>
-    <a>12. Tottenham</a><hr>
-    <a>13. A.C. Milan</a><hr>
-    <a>14. A.S. Roma</a><hr>
-    <a>15. S.S.C. Napoli</a><hr>
-    <a>16. Inter Milan</a><hr>
-    <a>17. Sevilla FC</a><hr>
-    <a>18. AFC Ajac</a><hr>
-    <a>19. FC Porto</a><hr>
-    <a>20. Valencia CF</a><hr>
-    <a>21. Leicester City F.C.</a><hr>
-    <a>22. Everton F.C.</a><hr>
-    <a>23. S.L. Benfica</a><hr>
-    <a>24. FC Schalke 04</a><hr>
-    <a>25. AS Monaco FC</a><hr>
-    <a>26. Bayer Leverkusen</a><hr>
-    <a>27. Olympique de Marseille</a><hr>
-    <a>28. Olympique Lyonnais</a><hr>
-    <a>29. S.S. Lazio</a><hr>
-    <a>30. Celtic Football Club</a><hr>
-    <a>31. Galatasaray S.K.</a><hr>
-    <a>32. LA Galaxy</a><hr>
-    <a>33. VfL Wolfsburg</a><hr>
-    <a>34. VfL Wolfsburg</a><hr>
-    <a>35. Athletic Bilbao</a><hr>
- </div>
-
-        <h1 id="planetSoccerHomePageTitle" class="InheritPlanetSoccerHomePage">
-            <img id="marginSetLogo" src="https://ubuntuplanet.org/wp-content/uploads/2018/12/earthMap3.png" hieght="50" width="50">
-          Planet Soccer \ Teams</h1>
+		<meta name="keywords" content="HTML, CSS, XML, JAVA, JavaScript">
+		<meta name="description" content="Planet Soccer Website">
+		<meta name="author" content="Austin Thornton">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="setupSheet.css">
 
 
-					<div class="container"><div class="text-block">
-    				<h4>Champions 2018</h4>
-    					<p id="">France national football team</p>
-    				</div>
-      		</div>
+																																									<!-- Title Of Page -->
+<title>Planet Soccer \ Teams</title>
 
 
-			<div class="container">
-    		<div class="text-block" margin-right="100px">
-					<h4>Champions 2018</h4>
-					<p id="">France national football team</p>
-				</div>
-  		</div>
+																																												<!-- Name and Logo ontop of navigation  -->
+
+<!-- Will not be a sticky to follow scroll bar -->
+		<div class="Logo-Title">
+			<img src="Logo" alt="">
+			<h1>Planet Soccer \ Teams</h1>
+		</div>
+
+		<meta charset="utf-8">
+	<div class="MenuNavigation">																													<!--Navigation Menu Editor -->
+		<nav>
+			<ul>																																							<!-- navigation Directions -->
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="Players.html">Players</a></li>
+				<li><a href="Teams.html">Teams</a></li>
+				<li><a href="Records.html">Records</a></li>
+				</ul>
+			</nav>
+		</div>
+	</head>
 
 
-						<ul>
-              <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="#players">Players</a></li>
-              <li><a href="Teams.html">Teams</a></li>
-            <main>
-              <li><a href="#records">Records</a></li>
-            </ul>
+
+	<body>
+
+		<section class="Image-MainScreen">																																				<!-- Image under navigation at full top -->
+			<img src="https://qph.fs.quoracdn.net/main-qimg-3d93e9155ba23b1695cd67f07c2e432f" alt="">
+		</section>
 
 
-						<div class="container">
-              <div class="textOverImage">
-  							<img id="mainImage"src="https://qph.fs.quoracdn.net/main-qimg-3d93e9155ba23b1695cd67f07c2e432f" alt="Avatar" class="image">
-    							<div class="imageCenterText">Web of Soccer</div>
-    								<div class="overlay">
-    									<div class="text">Creator: Austin Thornton</div>
-  									</div>
-									</div>
-								</div>
+		<section class="Top-Premier-League_Teams">
+			<h2>Top Premier League Teams 2018</h2>
+				<img src="http://www.iowadecanted.com/wp-content/uploads/2013/10/banner-levels-06.png">
+					<div class="Top-Teams-LiverPool">
+						<p id="Name">Liverpool</p>
+						<p id="wins">Wins: 24</p>
+						<p id="Draws">Draws: 2</p>
+						<p id="Loss">Loss: 1</p>
+
+						<img id="Image-LiverPool"src="https://worldsportlogos.com/wp-content/uploads/2018/01/Liverpool-logo.png">
+							<ol id="LiverPool-Players">
+								<li>Mohamed Salah, Forward</li>
+									<li>Sadio Mane, Forward</li>
+									<li>Xherdan Shaqiri, Forwards</li>
+									<li>Alisson Becker, Goalkeeper</li>
+									<li>Naby Keita, Midfielder</li>
+									<li>Virgil Dijk, Defender</li>
+									<li>Roberto Firmino, Forward</li>
+									<li>Fabhinho, Midfielder</li>
+									<li>Andrew Robertson, Defender</li>
+									<li>Dejan Lovren, Defender</li>
+					     		<li>James Milner, Midfielder</li>
+					     		<li>Trent Alexander, Defender</li>
+					     	  <li>Joe Gomez, Defender</li>
+					        <li>Jordan Henderson, Midfielder</li>
+					     		<li>Daniel Sturridge</li>
+									<li>Alex Chamberlain</li>
+									<li>Divock Origi, Forward</li>
+									<li>Georginio Wijnaldum, Midfielder</li>
+									<li>Curtis Joenes, Midfielder</li>
+									<li>Adam Lallana, Midfielder</li>
+									<li>Alberto Moeno, Defender</li>
+									<li>Simon Mignolet, Goalkeeper</li>
+									<li>Joel Matip, Defender</li>
+									<li>Ben Woodburn, Midfielder</li>
+									<li>Isaac Davis, Midfielder</li>
+									<li>Rafael Camacho, Midfielder</li>
+									<li>Caoimhin kelleher, Goalkeeper</li>
+									<li>Ki-Jana Hoever, Defender</li>
+							</ol>
+							</div>
+		</section>
+
+<section id="League-Placement-Manchester-United">
+		<div class="League-Placement-2018">
+			<p id="Name">Manchester United</p>
+			<p id="wins">Wins: 22</p>
+			<p id="Draws">Draws: 7</p>
+			<p id="Loss">Loss: 3</p>
+			<img src="data:image/png;base64,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" alt="">
+			<ol>
+				<li>Sergio Aguero, Forward</li>
+				<li>Raheem Sterling,Forward</li>
+				<li>Leroy Sane, Forward</li>
+				<li>Kevin De Bruyne, Midfielder</li>
+				<li>Riyad Mahrez, Midfielder</li>
+				<li>Ederson Santana, Goalkeeper</li>
+				<li>David Silva, Midfielder</li>
+				<li>Phil Foden, Midfielder</li>
+				<li>Gabriel Jesus, Forward</li>
+				<li>Oleksandr zinchenko, Midfielder</li>
+				<li>Fernandihno, Midfielder</li>
+				<li>Benjamin Mendy, Defender</li>
+				<li>Vincent Kompany, Defender</li>
+				<li>Aymeric Laporte, Defender</li>
+				<li>Bernardo Silva, Midfielder</li>
+				<li>ilkay Gundogan, Midfielder</li>
+				<li>John Stones, Defender</li>
+				<li>Arjanet Muric, Goalkeeper</li>
+				<li>Nicolais Otemandi, Defender</li>
+				<li>Danilo, Defender</li>
+				<li>Cladio Bravo, Goalkeeper</li>
+				<li>Kyle Walker, Defender</li>
+				<li>Philippe Sandler, Defender</li>
+				<li>Fabian Delph, Midfielder</li>
+				<li>Ian Poveda, Midfielder</li>
+				<li>Eric Garcia, Defender</li>
+				<li>Glaudio Gomes, Midfielder</li>
+				<li>Adrian Bernabe, Midfielder</li>
+				<li>Daiel Grimshow, Goalkeeper</li>
+				<li>Taylor Richards, Midfielder</li>
+				<li>Felix Nmecha, Midfielder</li>
+			</ol>
+</section>
 
 
-								<h1 id="PremierLeagueTitle">Premier League Teams 2018</h1>
-									<img src="http://www.iowadecanted.com/wp-content/uploads/2013/10/banner-levels-06.png" width="100%" height="100px">
-										<div class="LiverPool"><br/>
-  										<div class="BG">
-    										<a id="PremierLeagueTitle2" style="color: white;">( LiverPool )</a>
-      									<a id="PremierLeagueTitle3" style="color: green;">Wins: 19</a><a id="PremierLeagueTitle2" style="color: gray;">Draws:4</a>
-      									<a id="PremierLeagueTitle4" style="color: red;">Loss:1</a><br/><br/><br/>
-  										</div>
-
-
-											<img id="Liverpoolimg"src="https://worldsportlogos.com/wp-content/uploads/2018/01/Liverpool-logo.png">
-
-
-											<a id="TitleRosterLiverPool">
-<a id="leftColorBorderRed2">Mohamed Salah, Forward <br/>
-	  Sadio Mane, Forward<br/> Xherdan Shaqiri, Forwards
-																												<br/> Alisson Becker, Goalkeeper<br/>
- 																												Naby Keita, Midfielder<br/>
- 																											Virgil Dijk, Defender<br/>
- 																										Roberto Firmino, Forward<br/>
-																									Fabhinho, Midfielder<br/>
-																								Andrew Robertson, Defender<br/>
-																							Dejan Lovren, Defender<br/>
-																						James Milner, Midfielder<br/>
-																					Trent Alexander, Defender<br/>
-																				Joe Gomez, Defender<br/>
-																			Jordan Henderson, Midfielder<br/>
-																					Daniel Sturridge<br/>
-																							Alex Chamberlain<br/>
-																										Divock Origi, Forward<br/>
-																										Georginio Wijnaldum, Midfielder<br/>
-																										Curtis Joenes, Midfielder<br/>
-																										Adam Lallana, Midfielder<br/>
-																										Alberto Moeno, Defender<br/>
-																										Simon Mignolet, Goalkeeper<br/>
-																										Joel Matip, Defender<br/>
-																										Ben Woodburn, Midfielder<br/>
-																										Isaac Davis, Midfielder<br/>
-																										Rafael Camacho, Midfielder<br/>
-																										Caoimhin kelleher, Goalkeeper<br/>
-																										Ki-Jana Hoever, Defender</a>
-																									</div>
-																								</a>
-																							</a>
-																						</div>
-																					</div>
-
-
-			<p id="sizing"><b>League Placement: #1<b></p><br/>
-
-  </main>
-</body>
-
-	<style>
-.BG{
-  background: #333333;
-}
-#lineupLP{  float: left;  width:  10%;  font-size: 16px;  color: black;  border-left: solid 3px #053C5F;  background:#0A79BD;
-}#liverpoolHome{		float: left;  width:  20%;font-size: 36px;color: green;  background:black;  text-align: center;
-}#test{float:right;
-}#sizing{font-size: 48px;text-align: center;background: grey;color: white;
-}#leftColorBorderRed2 ::-webkit-scrollbar {width: 10px;
-}#leftColorBorderRed2 ::-webkit-scrollbar-track {background: #f1f1f1;
-}#leftColorBorderRed2 ::-webkit-scrollbar-thumb {background: #888;
-}#leftColorBorderRed2 ::-webkit-scrollbar-thumb:hover {background: #555;
-}
-	</style>
+<section id="League-Placement-Tottenham">
+		<div class="League-Placement-2018">
+			<p id="Name">Tottenham</p>
+			<p id="wins">Wins: 20</p>
+			<p id="Draws">Draws: 1</p>
+			<p id="Loss">Loss: 9</p>
+			<ol>
+				<li>Davinson Sanchez</li>
+				<li>Kieran Trippier</li>
+				<li>Jan Vertonghen</li>
+				<li>Kyle Walker</li>
+				<li>Paulo Gazzaniga</li>
+				<li>Hugo Lloris</li>
+				<li>Michel Vorm</li>
+				<li>Toby Alderweireld</li>
+				<li>Serge Aurier</li>
+				<li>Ben Davies</li>
+				<li>Juan Foyth</li>
+				<li>Danny Rose</li>
+				<li>Dele Alli</li>
+				<li>Mousa Dembele</li>
+				<li>Eric Dier</li>
+				<li>Lucas Moura</li>
+				<li>Moussa Sissoko</li>
+				<li>Victor Wanyama</li>
+				<li>Harry Winks</li>
+				<li>Harry Kane</li>
+				<li>Erik Lamela</li>
+				<li>Fernando Llorente</li>
+				<li>Georges Kevin</li>
+			</ol>
+	</body>
 </html>
